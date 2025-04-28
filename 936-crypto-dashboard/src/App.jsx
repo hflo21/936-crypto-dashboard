@@ -7,17 +7,9 @@ import Chat from "./pages/Chat";
 
 function App() {
   return (
-    <Router>
-      <div className="bg-white min-h-screen">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/swap" element={<Swap />} />
-          <Route path="/chat" element={<Chat />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white">
+      <h1 className="text-4xl font-bold">🚀 936 Crypto Dashboard is Alive!</h1>
+    </div>
   );
 }
 

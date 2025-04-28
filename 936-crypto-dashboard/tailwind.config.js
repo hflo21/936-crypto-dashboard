@@ -5,13 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        pitchblack: '#080808',
-        vividred: '#ED254E',
-        lightblue: '#8DA9C4',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
