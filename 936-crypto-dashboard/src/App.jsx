@@ -1,14 +1,23 @@
-import Navbar from './components/Navbar';
-import { Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Swap from "./pages/Swap";
+import Chat from "./pages/Chat";
 
 function App() {
   return (
-    <div className="bg-pitchblack min-h-screen text-white">
-      <Navbar />
-      <div className="p-8">
-        <Outlet /> {/* This renders the current page */}
+    <Router>
+      <div className="bg-white min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/swap" element={<Swap />} />
+          <Route path="/chat" element={<Chat />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 
